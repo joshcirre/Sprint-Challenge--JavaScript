@@ -18,7 +18,7 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 ## Description
 
-You will notice there are several JavaScript files being brought into the index.html file.  Each of those files contain JavaScript problems you need to solve.  If you get stuck on something, skip over it and come back to it later.
+You will notice there are several JavaScript files being brought into the index.html file. Each of those files contain JavaScript problems you need to solve. If you get stuck on something, skip over it and come back to it later.
 
 In meeting the minimum viable product (MVP) specifications listed below, you should have a console full of correct responses to the problems given.
 
@@ -30,33 +30,52 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+The biggest difference between `.forEach` & `.map` is that `.forEach` doesn't return a new array. The `.map` function creates a new array separate from the original array.
+
 2. What is the difference between a function and a method?
+
+The difference between a function and a method is that a function is independent and does not rely on an object to be called. A method is a function directly tied to an object. This method "function" can not be called upon outside of the object. It has to live with the object from which the method comes from.
 
 3. What is closure?
 
+Closure is the space in which nested functions have access to their outer function's variables. This is because nested scopes have access to their outer scopes that they are nested in.
+
 4. Describe the four rules of the 'this' keyword.
 
-5. Why do we need super() in an extended class?
+1. Window/Global Object Binding:
+   "This" will return the window or global object whenever "this" is used in the global scope.
+
+1. Implicit Binding
+   You can bind "this" to an object when "this" within the given object. It has to be directly binded.
+
+1. New Binding
+   Using constructor functions, "this" is binded to the function so that every specific instance of that constructor and itss props has its own "this" scope.
+
+1. Explicit Binding
+   We can explicitly bind "this" using the `.call` and `.apply` keywords.
+
+1. Why do we need super() in an extended class?
+
+We need to call `super()` whenever we are extending a class because it tells the extended class to use the parent's constructor properties and have access to them in the child's extension of the parent class. This is the easier way instead of having to use the `Object.create()` keyword when trying to access a parent's props.
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [X] Create a forked copy of this project.
-- [X] Add TL as collaborator on Github.
-- [X] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [X] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [X] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [X] You are now ready to build this project with your preferred IDE
-- [X] Implement the project on your Branch, committing changes regularly.
-- [X] Push commits: git push origin `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add TL as collaborator on Github.
+- [x] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [x] Create a pull request before you start working on the project requirements. You will continuously push your updates throughout the project.
+- [x] You are now ready to build this project with your preferred IDE
+- [x] Implement the project on your Branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your team lead as a Reviewer on the Pull-request
-- [ ] TL then will count the HW as done by  merging the branch back into master.
-
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo).
+- [x] Add your team lead as a Reviewer on the Pull-request
+- [] TL then will count the HW as done by merging the branch back into master.
 
 ## Minimum Viable Product
 
@@ -65,20 +84,28 @@ Your finished project must include all of the following requirements:
 **Pro tip for this challenge: If something seems like it isn't working locally, copy and paste your code up to codepen and take another look at the console.**
 
 ## Task 1: Objects and Arrays
-Test your knowledge of objects and arrays. 
-* [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
+
+Test your knowledge of objects and arrays.
+
+- [x] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started. Read the instructions carefully!
 
 ## Task 2: Functions
-This challenge takes a look at callbacks and closures as well as scope. 
-* [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
+
+This challenge takes a look at callbacks and closures as well as scope.
+
+- [x] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
 
 ## Task 3: Prototypes
+
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
-* [ ] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
+
+- [x] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
 
 ## Task 4: Classes
+
 Once you have completed the prototypes challenge, it's time to convert all your hard work into classes.
-* [ ] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
+
+- [x] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
 
 In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
